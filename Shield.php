@@ -6,8 +6,7 @@
  * Time: 11:47 AM
  */
 
-class Shield extends Armor
-{
+class Shield extends Armor{
     /**
      * Shield constructor.
      */
