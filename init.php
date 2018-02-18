@@ -1,3 +1,3 @@
 <?php
-  include 'test.html';
+  include 'index.html';
   ?>

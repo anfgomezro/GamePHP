@@ -8,55 +8,48 @@
   <body background="img/wizard.jpg">
     <form action="index.php" method="post">
     <title="AMGame">
-      <header>
-        <h1 class="hd1">
-          Player 1: Select your character Player 2: Select your character
-       </h1>
-      </header>
+      <h2 class="hd1">
+        hola!
+      </h2>
+
       <div>
-      <div>
-        <div>
-          <select name="player1">
-            <option value="Soldier">Soldier</option>
-            <option value="Archer">Archer</option>
-            <option value="Wizard">Wizard</option>
-          </select>
+        <div style="margin-bottom:125px">        
+            <select name="player1">
+              <option value="Soldier">Soldier</option>
+              <option value="Archer">Archer</option>
+              <option value="Wizard">Wizard</option>
+            </select>            
+        
+            <select name="player2" style="margin-left:525px">
+              <option value="Soldier">Soldier</option>
+              <option value="Archer">Archer</option>
+              <option value="Wizard">Wizard</option>
+            </select>
+        
         </div>
-        <vr>
-            
-        <div style="margin-left:600px">
-          <select name="player2">
-            <option value="Soldier">Soldier</option>
-            <option value="Archer">Archer</option>
-            <option value="Wizard">Wizard</option>
-          </select>
+        <div style="margin-bottom:125px">
+           <select name="player1Armor">
+             <option value="Shiled">Shield</option>
+           </select>        
+             <select name="player2Armor" style="margin-left:529px">
+              <option value="Shield">Shield</option>
+             </select>
         </div>
-      </div>
-        <div style="">
-          <select name="player1Armor">
-            <option value="Shiled">Shield</option>
-          </select>
-        </div>
-        <vr>
-        <div style="margin-left:600px">
-          <select name="player2Armor">
-            <option value="Shield">Shield</option>
-          </select>
-      </div>
-        <div style="">
+        <div style="margin-bottom:175px">
           <select name="player1Weapon">
             <option value="Sword">Sword</option>
             <option value="Wand">Wand</option>
             <option value="Bow">Bow</option>
           </select>
+          <select name="player2Weapon"  style="margin-left:529px">
+              <option value="Sword">Sword</option>
+            </select>
+        
         </div>
-        <vr>
-        <div style="margin-left:600px">
-          <select name="player2Weapon">
-            <option value="Sword">Sword</option>
-          </select>
+        
+          
         </div>
-      <input type="submit">
+      <input type="submit" style="margin-left:329px">
       </div>
     </form>
   </body>
