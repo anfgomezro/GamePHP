@@ -14,19 +14,8 @@ abstract class Fighter
  private $defense;
  private $agility;
 
- abstract protected function attackProduce();
- abstract  protected  function defenseRating();
- function updateLife($hurt){
-     $reduceFatFat= 0;
-     if($this->getDefense() < $hurt ){
-        $reduceFatFat = 100;
-     }elseif ($this->getDefense() > $hurt){
-        $reduceFatFat = 100 + ($this->getDefense()-$hurt);
-     }else{
-
-     }
- }
-
+ abstract  function attackProduce();
+ abstract  function defenseRating();
 
 
     /**

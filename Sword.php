@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by IntelliJ IDEA.
  * User: fgomez
@@ -6,9 +7,7 @@
  * Time: 11:45 AM
  */
 
-class Sword extends Weapon
-{
-
+class Sword extends Weapon{
     /**
      * Sword constructor.
      */
