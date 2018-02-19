@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AMGAme</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
+  </head>
+  <body background="img/wizard.jpg">
+    <form action="index.php" method="post">
+
+      <div class="player1">
+        <h2>Player 1</h2>
+        <p class="hd1">Select your character</p>
+        <div class="block">
+          <select name="player1" class="s1">
+            <option value="Soldier">Soldier</option>
+            <option value="Archer">Archer</option>
+            <option value="Wizard">Wizard</option>
+          </select>
+        </div>
+        <p class="hd1">Select your armor...</p>
+        <select name="player1Armor" class="s1">
+             <option value="Shield">Shield</option>
+             <option value="Plaque">Plaque</option>
+             <option value="Leather">Leather</option>
+             <option value="Mesh">Mesh</option>
+             <option value="Robe">Robe</option>
+             <option value="Scutum">Scutum</option>
+        </select>
+        <p class="hd1">Choose a weapon!</p>
+        <select name="player1Weapon" class="s1" >
+            <option value="Sword">Sword</option>
+            <option value="Wand">Wand</option>
+            <option value="Bow">Bow</option>
+            <option value="Axe">Axe</option>
+            <option value="Crosier">Crosier</option>
+            <option value="Spear">Spear</option>
+        </select>
+      </div>
+      <div class="player2">
+        <p class="hd2">Player 2 select your character</p>
+        <select name="player2" class="s2">
+          <option value="Soldier">Soldier</option>
+          <option value="Archer">Archer</option>
+          <option value="Wizard">Wizard</option>
+        </select>
+        <p class="hd2">Player 2 select your armor...</p>
+        <select name="player2Armor" class="s2">
+             <option value="Shield">Shield</option>
+             <option value="Plaque">Plaque</option>
+             <option value="Leather">Leather</option>
+             <option value="Mesh">Mesh</option>
+             <option value="Robe">Robe</option>
+             <option value="Scutum">Scutum</option>
+        </select>
+        <p class="hd2">Player 2 Choose a weapon!</p>
+        <select name="player2Weapon"  class="s2">
+            <option value="Sword">Sword</option>
+            <option value="Wand">Wand</option>
+            <option value="Bow">Bow</option>
+            <option value="Axe">Axe</option>
+            <option value="Crosier">Crosier</option>
+            <option value="Spear">Spear</option>
+        </select>
+
+      </div>
+      <input type="submit" style=" margin-up:500px;">
+    </form>
+
+  </body>
+</html>

@@ -2,8 +2,8 @@
 class Bow extends Weapon {
 
   public function __construct(){
-    $this->setDamage(125);
-    $thisd->setQuality(7);
+    $this->setDamage(43);
+    $this->setQuality(26);
   }
 }
  ?>

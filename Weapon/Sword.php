@@ -14,6 +14,6 @@ class Sword extends Weapon{
     public function __construct()
     {
         $this->setDamage(50);
-        $this->setQuality(12);
+        $this->setQuality(20);
     }
 }

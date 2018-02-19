@@ -2,9 +2,9 @@
 class Axe extends Weapon {
 
   public function __construct(){
-    $this->setDamage(34);
-    $thisd->setQuality(23);
+    $this->setDamage(40);
+    $this->setQuality(28);
   }
-  
+
 }
  ?>
