@@ -15,7 +15,7 @@ body {
   margin: auto;
   overflow: hidden;
   text-align: center;
-  color: #ac1245;
+  color: #ffd650;
   font-family: 'Alegreya'
 }
 
@@ -70,22 +70,14 @@ header {
     font-size:30px;
 }
 
-.s1{
+.s1 {
     font-family: 'Alegreya';
-    margin-top: 10px;
-    margin-bottom:10px;
-    height: 25px;
-    width: 75px;
     background-color: orangered;
     color: darkblue;
 }
 
-.s2{
+.s2 {
     font-family: 'Alegreya';
-    margin-top: 100px;
-    margin-bottom:100px;
-    height: 25px;
-    width: 75px;
     background-color: darkslateblue;
     color: #FFD700;
 }
