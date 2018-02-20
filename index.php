@@ -69,21 +69,29 @@ switch ($player2) {
   break;
 }
 
+echo "<section class='container'>";
 echo "<section class='distance'>";
+echo "<section class='box2'>";
 echo "<p class='subtitle'>Player 1</p>";
 echo "<p class='subtitle'>".$player1." Life : ".$fighter1->getLife()."</p>";
 echo "<p class='subtitle'> Weapon : ".$player1Weapon."</p>";
 echo "<p class='subtitle'> Armor : ".$player1Armor."</p>";
 echo "</section>";
+echo "</section>";
 echo "<section class='distance'>";
+echo "<section class='box2'>";
 echo "<p class='subtitle'>Player 2</p>";
 echo "<p class='subtitle'>".$player2." Life : ".$fighter2->getLife()."</p>";
 echo "<p class='subtitle'> Weapon : ".$player2Weapon."</p>";
 echo "<p class='subtitle'> Armor : ".$player2Armor."</p>";
 echo "</section>";
-
+echo "</section>";
+echo "</section>";
 $finished = true;
 $winner =0;
+
+echo "<div class='container'>";
+echo "<div class='scroll'>";
 while($finished){
   if($fighter1->getLife()<0 || $fighter2->getLife()<0){
       $finished= false;
@@ -97,15 +105,24 @@ while($finished){
     fight($fighter1,$fighter2);
     fight($fighter2,$fighter1);
 }
+echo "</div>";
+echo "</div>";
 
+echo "<section class='container'>";
+echo "<section class='box2'>";
 echo "<section class='distance'>";
 echo "<p class='subtitle'>Final Life Player 2</p>";
 echo "<p class='subtitle'>".$fighter1->getLife()."</p>";
 echo "</section>";
+echo "</section>";
+echo "<section class='box2'>";
 echo "<section class='distance'>";
 echo "<p class='subtitle'>Final Life Player 2</p>";
 echo "<p class='subtitle'>".$fighter2->getLife()."</p>";
 echo "</section>";
+echo "</section>";
+echo "</section>";
+
 echo "<section class='distance'>";
 if($winner == 1){
   echo "<p class='subtitle'>Winner Player 1</p>";
@@ -115,6 +132,7 @@ if($winner == 1){
   echo "<p class='subtitle'>".$fighter2->whoAmI()."</p>";
 }
 echo "</section>";
+
 ?>
 <section class="distance">
   <section class="subtitle">

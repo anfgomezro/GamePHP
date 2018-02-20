@@ -44,22 +44,24 @@ header {
 }
 .player1title{
     float:left;
-    height: 35px;
-    width:9%;
+    height: 20px;
+    width:8%;
     color:darkred;
     background:gainsboro;
     font-size:22px;
-    margin-left: 24px;
+    margin-left: 15px;
+    padding: 10px;
 }
 
 .player2title{
     float:right;
-    width:9%;
-    height: 35px;
+    width:8%;
+    height: 20px;
     color:darkblue;
     background:gainsboro;
     font-size:22px;
     margin-right: 80px;
+    padding: 10px;
 }
 
 .box {
@@ -71,6 +73,14 @@ header {
   font-size: 17px;
 }
 
+.box2 {
+  color: gainsboro;
+  float: left;
+  text-align: center;
+  width: 45%;
+  padding: 10px;
+  font-size: 17px;
+}
 .title {
   color: gold;
   float: left;
@@ -130,6 +140,16 @@ header {
   margin-bottom: 9px;
 }
 
+.logs {
+  color: darkblue;
+  text-align: center;
+}
+.scroll {
+  background-color: gainsboro;
+  overflow: scroll;
+  height: 250px;
+  width: auto;
+}
 footer {
   padding: 20px;
   margin-top: 20px;

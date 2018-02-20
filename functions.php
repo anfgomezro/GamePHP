@@ -54,8 +54,18 @@ function selectArmor($playerA){
   return $Armor;
 }
 
+function echoEvent(Fighter $attacker, Fighter $defender, $match_stage){
+  if($match_stage == "first"){
+    echo "<p class='logs'>".$attacker->whoAmI(). ' is attacking '.$defender->whoAmI(). ' with life: '. $defender->getLife()."</p>";
+  }
+  else{
+        echo "<p class='logs'>".$defender->whoAmI()." has now ".$defender->getLife().' life points'."</p>";
+    }
+
+}
+
 function fight(Fighter $attacker, Fighter $defender ){
-    echo "<p class='subtitle'>Atacando :".$attacker->whoAmI()."</p>";
+    echoEvent($attacker, $defender, "first");
     $global = $attacker->attackProduce() - $defender->defenseRating();
     if ($global > 0){
         $defender->setLife($defender->getLife()-$global);
@@ -63,8 +73,7 @@ function fight(Fighter $attacker, Fighter $defender ){
         $attacker->setLife($attacker->getLife()+($global/2));
     } else {
         $attacker->setLife($attacker->getLife() - 100);
-        $defender->setLife($defender->getLife() - 100);
-    }
+        $defender->setLife($defender->getLife() - 100);    }
+    echoEvent($attacker, $defender, "last");
 }
-
- ?>
+?>
