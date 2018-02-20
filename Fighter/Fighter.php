@@ -13,11 +13,19 @@ abstract class Fighter
  private $attack;
  private $defense;
  private $agility;
+ private $weapon;
+ private $armor;
 
- abstract  function attackProduce();
- abstract  function defenseRating();
+ abstract function attackProduce();
+ abstract function defenseRating();
+ abstract function whoAmI();
 
 
+ public function __construct(Weapon $weapon, Armor $armor)
+ {
+    $this->weapon = $weapon;
+    $this->armor = $armor;
+ }
     /**
      * @return mixed
      */
@@ -82,5 +90,5 @@ abstract class Fighter
         $this->agility = $agility;
     }
 
-}
 
+}

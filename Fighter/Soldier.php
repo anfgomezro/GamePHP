@@ -13,6 +13,7 @@ class Soldier extends Fighter
      */
     public function __construct(Weapon $weapon,Armor $armor)
     {
+        parent::__construct($weapon,$armor);
         $this->setAgility(100 + $armor->getWeight()*2 + $weapon->getQuality()*3);
         $this->setAttack(200 + $weapon->getDamage()*3);
         $this->setDefense(300 + $armor->getProtection()*4);
@@ -29,5 +30,8 @@ class Soldier extends Fighter
     {
         $protection = $this->getDefense() + $this->getAgility()*rand(3,7);
         return $protection;
+    }
+    function whoAmI(){
+      return "Soldier";
     }
 }

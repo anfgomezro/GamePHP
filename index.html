@@ -4,53 +4,69 @@
     <meta charset="utf-8">
     <title>AMGAme</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
   </head>
   <body background="img/wizard.jpg">
     <form action="index.php" method="post">
-    <title="AMGame">
-      <h2 class="hd1">
-        hola!
-      </h2>
 
-      <div>
-        <div style="margin-bottom:125px">        
-            <select name="player1">
-              <option value="Soldier">Soldier</option>
-              <option value="Archer">Archer</option>
-              <option value="Wizard">Wizard</option>
-            </select>            
-        
-            <select name="player2" style="margin-left:525px">
-              <option value="Soldier">Soldier</option>
-              <option value="Archer">Archer</option>
-              <option value="Wizard">Wizard</option>
-            </select>
-        
+      <div class="player1">
+        <h2>Player 1</h2>
+        <p class="hd1">Select your character</p>
+        <div class="block">
+          <select name="player1" class="s1">
+            <option value="Soldier">Soldier</option>
+            <option value="Archer">Archer</option>
+            <option value="Wizard">Wizard</option>
+          </select>
         </div>
-        <div style="margin-bottom:125px">
-           <select name="player1Armor">
-             <option value="Shiled">Shield</option>
-           </select>        
-             <select name="player2Armor" style="margin-left:529px">
-              <option value="Shield">Shield</option>
-             </select>
-        </div>
-        <div style="margin-bottom:175px">
-          <select name="player1Weapon">
+        <p class="hd1">Select your armor...</p>
+        <select name="player1Armor" class="s1">
+             <option value="Shield">Shield</option>
+             <option value="Plaque">Plaque</option>
+             <option value="Leather">Leather</option>
+             <option value="Mesh">Mesh</option>
+             <option value="Robe">Robe</option>
+             <option value="Scutum">Scutum</option>
+        </select>
+        <p class="hd1">Choose a weapon!</p>
+        <select name="player1Weapon" class="s1" >
             <option value="Sword">Sword</option>
             <option value="Wand">Wand</option>
             <option value="Bow">Bow</option>
-          </select>
-          <select name="player2Weapon"  style="margin-left:529px">
-              <option value="Sword">Sword</option>
-            </select>
-        
-        </div>
-        
-          
-        </div>
-      <input type="submit" style="margin-left:329px">
+            <option value="Axe">Axe</option>
+            <option value="Crosier">Crosier</option>
+            <option value="Spear">Spear</option>
+        </select>
       </div>
+      <div class="player2">
+        <p class="hd2">Player 2 select your character</p>
+        <select name="player2" class="s2">
+          <option value="Soldier">Soldier</option>
+          <option value="Archer">Archer</option>
+          <option value="Wizard">Wizard</option>
+        </select>
+        <p class="hd2">Player 2 select your armor...</p>
+        <select name="player2Armor" class="s2">
+             <option value="Shield">Shield</option>
+             <option value="Plaque">Plaque</option>
+             <option value="Leather">Leather</option>
+             <option value="Mesh">Mesh</option>
+             <option value="Robe">Robe</option>
+             <option value="Scutum">Scutum</option>
+        </select>
+        <p class="hd2">Player 2 Choose a weapon!</p>
+        <select name="player2Weapon"  class="s2">
+            <option value="Sword">Sword</option>
+            <option value="Wand">Wand</option>
+            <option value="Bow">Bow</option>
+            <option value="Axe">Axe</option>
+            <option value="Crosier">Crosier</option>
+            <option value="Spear">Spear</option>
+        </select>
+
+      </div>
+      <input type="submit" style=" margin-up:500px;">
     </form>
+
   </body>
 </html>
