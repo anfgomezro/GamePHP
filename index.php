@@ -1,10 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta  name="viewport" content="width=device-width,initial scale=1.0"/>
+    <meta http-equiv="X-UA_Compatible" content="ie=edge"/>
+    <title>AMGame</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
+  </head>
+<body background="img/wizard.jpg">
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: fgomez
- * Date: 2/15/2018
- * Time: 11:53 AM
- */
 
 require "Fighter/Fighter.php";
 require "Armor/Armor.php";
@@ -64,15 +69,18 @@ switch ($player2) {
   break;
 }
 
-
-echo "Player 1";
-echo "<p style='color:#353cff'>".$player1." Life : ".$fighter1->getLife()."</p>";
-echo "<p style='color:#353cff'> Weapon : ".$player1Weapon."</p>";
-echo "<p style='color:#353cff'> Armor : ".$player1Armor."</p>";
-echo "Player 2";
-echo "<p style='color:#353cff'>".$player2." Life : ".$fighter2->getLife()."</p>";
-echo "<p style='color:#353cff'> Weapon : ".$player2Weapon."</p>";
-echo "<p style='color:#353cff'> Armor : ".$player2Armor."</p>";
+echo "<section class='distance'>";
+echo "<p class='subtitle'>Player 1</p>";
+echo "<p class='subtitle'>".$player1." Life : ".$fighter1->getLife()."</p>";
+echo "<p class='subtitle'> Weapon : ".$player1Weapon."</p>";
+echo "<p class='subtitle'> Armor : ".$player1Armor."</p>";
+echo "</section>";
+echo "<section class='distance'>";
+echo "<p class='subtitle'>Player 2</p>";
+echo "<p class='subtitle'>".$player2." Life : ".$fighter2->getLife()."</p>";
+echo "<p class='subtitle'> Weapon : ".$player2Weapon."</p>";
+echo "<p class='subtitle'> Armor : ".$player2Armor."</p>";
+echo "</section>";
 
 $finished = true;
 $winner =0;
@@ -90,19 +98,34 @@ while($finished){
     fight($fighter2,$fighter1);
 }
 
-echo "Final life player1    ";
-echo "<p>".$fighter1->getLife()."</p>";
-echo "Final Life player2    ";
-echo "<p>".$fighter2->getLife()."</p>";
-
+echo "<section class='distance'>";
+echo "<p class='subtitle'>Final Life Player 2</p>";
+echo "<p class='subtitle'>".$fighter1->getLife()."</p>";
+echo "</section>";
+echo "<section class='distance'>";
+echo "<p class='subtitle'>Final Life Player 2</p>";
+echo "<p class='subtitle'>".$fighter2->getLife()."</p>";
+echo "</section>";
+echo "<section class='distance'>";
 if($winner == 1){
-  echo "Winner Player 1";
-  echo "<p style='color:#ff5a69'>".$fighter1->whoAmI()."</p>";
+  echo "<p class='subtitle'>Winner Player 1</p>";
+  echo "<p class='subtitle'>".$fighter1->whoAmI()."</p>";
 } else {
-  echo "Winner player 2";
-  echo "<p style='color:#ff5a69'>".$fighter2->whoAmI()."</p>";
+  echo "<p class='subtitle'>Winner Player 2</p>";
+  echo "<p class='subtitle'>".$fighter2->whoAmI()."</p>";
 }
+echo "</section>";
+?>
+<section class="distance">
+  <section class="subtitle">
+  <form action='index.html'>
+  <input type='submit' value='Other match'>
+  </form>
+  </section>
+</section>
 
-echo "<form action='index.html'>";
-echo "<input type='submit' value='Other match'>";
-echo "</form>";
+<footer>
+  <p> Copyright (c) 2018 endava/mballen_agomez All Rights Reserved. </p>
+</footer>
+  </body>
+</html>

@@ -55,6 +55,7 @@ function selectArmor($playerA){
 }
 
 function fight(Fighter $attacker, Fighter $defender ){
+    echo "<p class='subtitle'>Atacando :".$attacker->whoAmI()."</p>";
     $global = $attacker->attackProduce() - $defender->defenseRating();
     if ($global > 0){
         $defender->setLife($defender->getLife()-$global);
