@@ -4,10 +4,27 @@ body {
     margin: 0;
 }
 
+header {
+    color: gainsboro;
+    padding-top: 30px;
+    min-height: 10px;
+    border-bottom: 3px solid darkblue;
+}
+
+.bigtitle{
+    color:gainsboro;
+    width: 100%;
+    text-align:center;
+    font-size: 20px;
+}
+
 .container {
   width: 80%;
+  #height: 150px;
   margin: auto;
   overflow: hidden;
+  color:gainsboro;
+
 }
 
 .subtitle {
@@ -15,31 +32,57 @@ body {
   margin: auto;
   overflow: hidden;
   text-align: center;
-  color: #ac1245;
-  font-family: 'Alegreya'
+  color: #ffd650;
+
 }
 
-header {
-  color: white;
-  padding-top: 30px;
-  min-height: 70px;
-  border-bottom: 3px solid blue;
+.players{
+    font-size: 20px;
+    text-align: center;
+    background: gainsboro;
+    width:13%;
+}
+.player1title{
+    float:left;
+    height: 20px;
+    width:8%;
+    color:darkred;
+    background:gainsboro;
+    font-size:22px;
+    margin-left: 15px;
+    padding: 10px;
 }
 
-.reading {
-  margin-top: 20px;
+.player2title{
+    float:right;
+    width:8%;
+    height: 20px;
+    color:darkblue;
+    background:gainsboro;
+    font-size:22px;
+    margin-right: 80px;
+    padding: 10px;
 }
 
 .box {
-  color: white;
+  color: gainsboro;
   float: left;
   text-align: center;
   width: 30%;
   padding: 10px;
+  font-size: 17px;
 }
 
+.box2 {
+  color: gainsboro;
+  float: left;
+  text-align: center;
+  width: 45%;
+  padding: 10px;
+  font-size: 17px;
+}
 .title {
-  color: #fff;
+  color: gold;
   float: left;
   text-align: center;
   width: 45%;
@@ -57,44 +100,56 @@ header {
 }
 
 .hd1{
-    font-family: 'Alegreya';
+
     width: 100%;
     color: #FFD700;
     font-size:30px;
 }
 
 .hd2{
-    font-family: 'Alegreya';
+
     float: right;
     color: #FFD700;
     font-size:30px;
 }
 
-.s1{
-    font-family: 'Alegreya';
-    margin-top: 10px;
-    margin-bottom:10px;
-    height: 25px;
-    width: 75px;
+.s1 {
+
     background-color: orangered;
+    font-size:17px;
     color: darkblue;
+    float: left;
+    width:25%;
+    font-weight:bold;
+    font-family: 'Alegreya';
 }
 
-.s2{
-    font-family: 'Alegreya';
-    margin-top: 100px;
-    margin-bottom:100px;
-    height: 25px;
-    width: 75px;
+.s2 {
+
+    font-size:17px;
     background-color: darkslateblue;
     color: #FFD700;
+    float:right;
+    width:25%;
+    font-weight:bold;
+    font-family: 'Alegreya';
 }
 
-.submit{
-    margin-left:329px;
-    margin-up:300px;
+.distance {
+  margin-top: 7px;
+  margin-bottom: 9px;
 }
 
+.logs {
+  color: darkblue;
+  text-align: center;
+}
+.scroll {
+  background-color: gainsboro;
+  overflow: scroll;
+  height: 250px;
+  width: auto;
+}
 footer {
   padding: 20px;
   margin-top: 20px;

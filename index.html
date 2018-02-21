@@ -11,7 +11,7 @@
   <body background="img/wizard.jpg">
 
       <header>
-        <div class="container">
+        <div class="bigtitle">
           <h1>Wars of Empires 3</h1>
         </div>
       </header>
@@ -19,51 +19,44 @@
       <section class="reading">
         <div class="container">
           <div class="box">
-            <h3>Soldier</h3>
-            <p>Great strength but it could be slow</p>
+            <h3 style="color: darkgoldenrod">Soldier</h3>
+            <p style="font-style:italic">Great strength but caution! Could be slow</p>
           </div>
           <div class="box">
-            <h3>Archer</h3>
-            <p>Very agile but the attack is not his best feature</p>
+            <h3 style="color:darkgoldenrod">Archer</h3>
+            <p style="font-style:italic">Very agile but the attack is not his best feature</p>
           </div>
           <div class="box">
-            <h3>Wizard</h3>
-            <p>Powerful but with a defense very poor</p>
+            <h3 style="color:darkgoldenrod">Wizard</h3>
+            <p style="font-style:italic">Powerful but with a defense very poor</p>
           </div>
         </div>
       </section>
 
-      <section class="reading">
-        <div class="container">
-          <div class="title">
-            <h2>Player 1</h2>
-          </div>
-          <div class="title">
-            <h2>Player 2</h2>
-          </div>
-        </div>
-      </section>
 
-<section class="container">
-  <form action="index.php" method="post">
-
-    <section class="reading">
-      <div class="subtitle">
-        <h2>Select your fighter</h2>
-      </div>
-    </section>
+  <section class="container">
+    <form action="index.php" method="post">
+            <div class="container">
+                <h3 class="player1title">Player 1</h3>
+                <h3 class="player2title">Player 2</h3>
+            </div>
+        <section class="reading">
+            <div class="subtitle">
+                <h2>Select your fighter</h2>
+            </div>
+        </section>
 
     <section class="reading">
       <div class="container">
         <div class="title">
-          <select name="player1">
+          <select name="player1" class="s1">
             <option value="Soldier">Soldier</option>
             <option value="Archer">Archer</option>
             <option value="Wizard">Wizard</option>
           </select>
         </div>
-        <div class="title">
-          <select name="player2">
+          <div class="title" >
+          <select name="player2" class="s2">
             <option value="Soldier">Soldier</option>
             <option value="Archer">Archer</option>
             <option value="Wizard">Wizard</option>
@@ -81,7 +74,7 @@
     <section class="reading">
       <div class="container">
         <div class="title">
-          <select name="player1Armor">
+          <select name="player1Armor" class="s1">
                <option value="Shield">Shield</option>
                <option value="Plaque">Plaque</option>
                <option value="Leather">Leather</option>
@@ -91,7 +84,7 @@
           </select>
         </div>
         <div class="title">
-          <select name="player2Armor">
+          <select name="player2Armor" class="s2">
                <option value="Shield">Shield</option>
                <option value="Plaque">Plaque</option>
                <option value="Leather">Leather</option>
@@ -112,7 +105,7 @@
     <section class="reading">
       <div class="container">
         <div class="title">
-          <select name="player1Weapon">
+          <select name="player1Weapon" class="s1">
               <option value="Sword">Sword</option>
               <option value="Wand">Wand</option>
               <option value="Bow">Bow</option>
@@ -122,7 +115,7 @@
           </select>
         </div>
         <div class="title">
-          <select name="player2Weapon">
+          <select name="player2Weapon" class="s2">
               <option value="Sword">Sword</option>
               <option value="Wand">Wand</option>
               <option value="Bow">Bow</option>
@@ -135,13 +128,13 @@
     </section>
     <section class="reading">
       <div class="subtitle">
-        <input type="submit">
+        <input type="submit" value="Fight!">
       </div>
     </section>
   </form>
 </section>
 <footer>
-  <p> Copyright (c) 2018 Copyright Holder All Rights Reserved. </p>
+  <p> Copyright (c) 2018 endava/mballen_agomez All Rights Reserved. </p>
 </footer>
   </body>
 </html>
