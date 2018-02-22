@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by IntelliJ IDEA.
  * User: fgomez
@@ -14,10 +15,10 @@ class Soldier extends Fighter
     public function __construct(Weapon $weapon,Armor $armor)
     {
         parent::__construct($weapon,$armor);
-        $this->setAgility(100 + $armor->getWeight()*2 + $weapon->getQuality()*3);
-        $this->setAttack(200 + $weapon->getDamage()*3);
-        $this->setDefense(300 + $armor->getProtection()*4);
-        $this->setLife(6000 + $this->getAgility()*rand(1,5));
+        $this->setAgility(20 + $armor->getWeight()*2 + $weapon->getQuality()*3);
+        $this->setAttack(40 + $weapon->getDamage()*4);
+        $this->setDefense(60 + $armor->getProtection()*2);
+        $this->setLife(1000 + $this->getAgility()*rand(1,5));
     }
 
     function attackProduce()

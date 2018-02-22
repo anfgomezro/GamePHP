@@ -3,7 +3,7 @@
 class Mesh extends Armor{
     public function __construct()
     {
-        $this->setProtection(25);
-        $this->setWeight(10);
+        $this->setProtection(7);
+        $this->setWeight(5);
     }
 }

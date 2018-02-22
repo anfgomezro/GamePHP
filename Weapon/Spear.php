@@ -3,7 +3,7 @@
 class Spear extends Weapon{
     public function __construct()
     {
-        $this->setDamage(35);
-        $this->setQuality(30);
+        $this->setDamage(4);
+        $this->setQuality(6);
     }
 }

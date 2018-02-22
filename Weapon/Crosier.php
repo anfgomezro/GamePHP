@@ -4,7 +4,7 @@ class Crosier extends Weapon{
 
     public function __construct()
     {
-        $this->setDamage(15);
-        $this->setQuality(60);
+        $this->setDamage(3);
+        $this->setQuality(7);
     }
 }

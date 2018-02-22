@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by IntelliJ IDEA.
  * User: fgomez
@@ -11,21 +12,21 @@ class Wizard extends Fighter
     public function __construct(Weapon $weapon,Armor $armor)
     {
         parent::__construct($weapon,$armor);
-        $this->setAgility(200 + $armor->getWeight()*2 + $weapon->getQuality()*3);
-        $this->setAttack(300 + $weapon->getDamage()*3);
-        $this->setDefense(100 + $armor->getProtection()*4);
-        $this->setLife(6000 + $this->getAgility()*rand(1,5));
+        $this->setAgility(40 + $armor->getWeight()*2 + $weapon->getQuality()*3);
+        $this->setAttack(60 + $weapon->getDamage()*3);
+        $this->setDefense(20 + $armor->getProtection()*2);
+        $this->setLife(1000 + $this->getAgility()*rand(1,5));
     }
 
     function attackProduce()
     {
-        $damage = $this->getAttack() + $this->getAgility()*rand(3,7);
+        $damage = $this->getAttack() + $this->getAgility()*rand(1,3);
         return $damage;
     }
 
     function defenseRating()
     {
-        $protection = $this->getDefense() + $this->getAgility()*rand(3,7);
+        $protection = $this->getDefense() + $this->getAgility()*rand(1,3);
         return $protection;
     }
 

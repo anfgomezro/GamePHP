@@ -3,7 +3,7 @@
 class Robe extends Armor{
     public function __construct()
     {
-        $this->setProtection(15);
-        $this->setWeight(18);
+        $this->setProtection(4);
+        $this->setWeight(8);
     }
 }

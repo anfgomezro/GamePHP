@@ -38,36 +38,8 @@ $player2 = $_POST["player2"];
 $player2Armor = $_POST["player2Armor"];
 $player2Weapon = $_POST["player2Weapon"];
 
-
-switch ($player1) {
-  case 'Soldier':
-    $fighter1 = new Soldier(selectWeapon($player1Weapon),selectArmor($player1Armor));
-  break;
-  case "Archer":
-    $fighter1 = new Archer(selectWeapon($player1Weapon),selectArmor($player1Armor));
-  break;
-  case "Wizard":
-    $fighter1 = new Wizard(selectWeapon($player1Weapon),selectArmor($player1Armor));
-  break;
-  default:
-    echo "paila";
-  break;
-}
-
-switch ($player2) {
-  case 'Soldier':
-    $fighter2 = new Soldier(selectWeapon($player2Weapon),selectArmor($player2Armor));
-  break;
-  case "Archer":
-    $fighter2 = new Archer(selectWeapon($player2Weapon),selectArmor($player2Armor));
-  break;
-  case "Wizard":
-    $fighter2 = new Wizard(selectWeapon($player2Weapon),selectArmor($player2Armor));
-  break;
-  default:
-    echo "paila";
-  break;
-}
+$fighter1 = selectPlayer($player1,$player1Weapon,$player1Armor);
+$fighter2 = selectPlayer($player2,$player2Weapon,$player2Armor);
 
 echo "<section class='container'>";
 echo "<section class='distance'>";
@@ -87,20 +59,21 @@ echo "<p class='subtitle'> Armor : ".$player2Armor."</p>";
 echo "</section>";
 echo "</section>";
 echo "</section>";
-$finished = true;
+$fighting = true;
 $winner =0;
 
 echo "<div class='container'>";
 echo "<div class='scroll'>";
-while($finished){
+while($fighting){
   if($fighter1->getLife()<0 || $fighter2->getLife()<0){
-      $finished= false;
-      if($fighter1->getLife()>$fighter2->getLife()){
-        $winner = 1;
-      } else {
-        $winner = 2;
-      }
+      $fighting= false;
       break;
+  }
+
+  if($fighter1->getLife()>$fighter2->getLife()){
+    $winner = 1;
+  } else {
+    $winner = 2;
   }
     fight($fighter1,$fighter2);
     fight($fighter2,$fighter1);
@@ -111,14 +84,14 @@ echo "</div>";
 echo "<section class='container'>";
 echo "<section class='box2'>";
 echo "<section class='distance'>";
-echo "<p class='subtitle'>Final Life Player 2</p>";
-echo "<p class='subtitle'>".$fighter1->getLife()."</p>";
+echo "<p class='subfinal'>Final Life Player 1</p>";
+echo "<p class='subfinal'>".$fighter1->getLife()."</p>";
 echo "</section>";
 echo "</section>";
 echo "<section class='box2'>";
 echo "<section class='distance'>";
-echo "<p class='subtitle'>Final Life Player 2</p>";
-echo "<p class='subtitle'>".$fighter2->getLife()."</p>";
+echo "<p class='subfinal'>Final Life Player 2</p>";
+echo "<p class='subfinal'>".$fighter2->getLife()."</p>";
 echo "</section>";
 echo "</section>";
 echo "</section>";

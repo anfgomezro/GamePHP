@@ -3,7 +3,7 @@
 class Plaque extends Armor{
     public function __construct()
     {
-        $this->setProtection(30);
-        $this->setWeight(5);
+        $this->setProtection(8);
+        $this->setWeight(4);
     }
 }

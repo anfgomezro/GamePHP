@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by IntelliJ IDEA.
  * User: fgomez
@@ -12,7 +13,7 @@ class Shield extends Armor{
      */
     public function __construct()
     {
-        $this->setProtection(23);
-        $this->setWeight(10);
+        $this->setProtection(6);
+        $this->setWeight(6);
     }
 }

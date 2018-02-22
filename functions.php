@@ -76,4 +76,24 @@ function fight(Fighter $attacker, Fighter $defender ){
         $defender->setLife($defender->getLife() - 100);    }
     echoEvent($attacker, $defender, "last");
 }
+
+function selectPlayer($player,$weapon,$armor){
+
+  switch ($player) {
+    case 'Soldier':
+      $fighter = new Soldier(selectWeapon($weapon),selectArmor($armor));
+    break;
+    case "Archer":
+      $fighter = new Archer(selectWeapon($weapon),selectArmor($armor));
+    break;
+    case "Wizard":
+      $fighter = new Wizard(selectWeapon($weapon),selectArmor($armor));
+    break;
+    default:
+      echo "paila";
+    break;
+  }
+
+  return $fighter;
+}
 ?>

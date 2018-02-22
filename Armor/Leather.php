@@ -3,7 +3,7 @@
 class Leather extends Armor{
     public function __construct()
     {
-        $this->setProtection(10);
-        $this->setWeight(30);
+        $this->setProtection(2);
+        $this->setWeight(10);
     }
 }

@@ -4,7 +4,7 @@
 class Scutum extends Armor{
     public function __construct()
     {
-        $this->setProtection(20);
-        $this->setWeight(14);
+        $this->setProtection(5);
+        $this->setWeight(7);
     }
 }
