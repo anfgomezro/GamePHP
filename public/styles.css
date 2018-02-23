@@ -2,13 +2,29 @@ body {
     font-family: 'Alegreya';
     padding: 0;
     margin: 0;
-}
 
+    background-repeat: no-repeat;
+    background-color: #34495c;
+    background-size: 50% auto;
+    background-attachment: fixed;
+}
+.bg_player_2 {
+    position: fixed;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 1024px;
+    z-index: -10;
+}
 header {
     color: gainsboro;
     padding-top: 30px;
     min-height: 10px;
     border-bottom: 3px solid darkblue;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .bigtitle{
@@ -32,7 +48,8 @@ header {
   margin: auto;
   overflow: hidden;
   text-align: center;
-  color: #ffd650;
+  color: goldenrod;
+    font-size: 15px;
 }
 
 .players{
@@ -43,22 +60,22 @@ header {
 }
 .player1title{
     float:left;
-    height: 20px;
-    width:8%;
+    height: 13px;
+    width:7%;
     color:darkred;
     background:gainsboro;
-    font-size:22px;
+    font-size:19px;
     margin-left: 15px;
     padding: 10px;
 }
 
 .player2title{
     float:right;
-    width:8%;
-    height: 20px;
+    width:7%;
+    height: 13px;
     color:darkblue;
     background:gainsboro;
-    font-size:22px;
+    font-size:19px;
     margin-right: 80px;
     padding: 10px;
 }
@@ -91,6 +108,7 @@ header {
 .player1, .player2 {
     width: 50%;
     float: left;
+
 }
 
 .block {
@@ -114,9 +132,9 @@ header {
 
 .s1 {
 
-    background-color: orangered;
-    font-size:17px;
-    color: darkblue;
+    background-color: darkred;
+    font-size:16px;
+    color: goldenrod;
     float: left;
     width:25%;
     font-weight:bold;
@@ -125,9 +143,9 @@ header {
 
 .s2 {
 
-    font-size:17px;
-    background-color: darkslateblue;
-    color: #FFD700;
+    font-size:16px;
+    background-color: darkblue;
+    color: goldenrod;
     float:right;
     width:25%;
     font-weight:bold;

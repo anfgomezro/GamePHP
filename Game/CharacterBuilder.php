@@ -16,7 +16,7 @@ use Game\Armor\Robe as Robe;
 use Game\Armor\Scutum as Scutum;
 use Game\Armor\Shield as Shield;
 
-class CharacterFactory{
+class CharacterBuilder{
 
   public static function getArmor($armor){
       switch ($armor) {
