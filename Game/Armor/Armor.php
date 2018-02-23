@@ -1,4 +1,5 @@
 <?php
+namespace Game\Armor;
 
 /**
  * Created by IntelliJ IDEA.

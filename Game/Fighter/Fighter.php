@@ -1,4 +1,5 @@
 <?php
+namespace Game\Fighter;
 
 /**
  * Created by IntelliJ IDEA.
@@ -22,7 +23,8 @@ abstract class Fighter
  abstract function whoAmI();
 
 
- public function __construct(Weapon $weapon, Armor $armor)
+
+ public function __construct($weapon,$armor)
  {
     $this->weapon = $weapon;
     $this->armor = $armor;
@@ -30,6 +32,7 @@ abstract class Fighter
     /**
      * @return mixed
      */
+
     public function getLife()
     {
         return $this->life;

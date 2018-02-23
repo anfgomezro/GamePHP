@@ -1,5 +1,6 @@
 <?php
-
+namespace Game\Armor;
+use Game\Armor\Armor as Armor;
 class Mesh extends Armor{
     public function __construct()
     {

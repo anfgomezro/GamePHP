@@ -1,4 +1,6 @@
 <?php
+namespace Game\Weapon;
+use Game\Weapon\Weapon as Weapon;
 
 class Crosier extends Weapon{
 

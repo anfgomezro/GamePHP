@@ -1,5 +1,6 @@
 <?php
-
+namespace Game\Fighter;
+use Game\Fighter\Fighter as Fighter;
 /**
  * Created by IntelliJ IDEA.
  * User: fgomez
@@ -9,7 +10,7 @@
 
 class Wizard extends Fighter
 {
-    public function __construct(Weapon $weapon,Armor $armor)
+    public function __construct($weapon,$armor)
     {
         parent::__construct($weapon,$armor);
         $this->setAgility(40 + $armor->getWeight()*2 + $weapon->getQuality()*3);

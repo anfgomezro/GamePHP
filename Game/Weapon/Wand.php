@@ -1,5 +1,6 @@
 <?php
-
+namespace Gmae\Weapon;
+use Game\Weapon\Weapon as Weapon;
 class Wand extends Weapon {
 
   public function __construct(){

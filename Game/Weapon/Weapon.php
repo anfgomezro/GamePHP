@@ -1,5 +1,5 @@
 <?php
-
+namespace Game\Weapon;
 /**
  * Created by IntelliJ IDEA.
  * User: fgomez
@@ -11,6 +11,9 @@ abstract class Weapon
 {
  private $quality;
  private $damage;
+
+
+
 
     /**
      * @return mixed

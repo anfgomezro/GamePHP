@@ -1,5 +1,6 @@
 <?php
-
+namespace Game\Armor;
+use Game\Armor\Armor as Armor;
 /**
  * Created by IntelliJ IDEA.
  * User: fgomez

@@ -1,5 +1,6 @@
 <?php
-
+namespace Game\Weapon;
+use Game\Weapon\Weapon as Weapon;
 /**
  * Created by IntelliJ IDEA.
  * User: fgomez
